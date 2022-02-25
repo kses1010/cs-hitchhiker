@@ -6,15 +6,16 @@
 
 ## 알고리즘
 
-### Algorithms Fourth Edition - 로버트 세지윅
+-   [자바(Java) 알고리즘 문제풀이 : 코딩테스트 대비](https://github.com/kses1010/cs-hitchhiker/tree/master/algorithms/javaalgo)
+-   Algorithms Fourth Edition - 로버트 세지윅
 
 ## 운영체제
 
-### 운영체제와 정보기술의 원리 - 반효경
+-   운영체제와 정보기술의 원리 - 반효경
 
 ## 데이터베이스
 
-### Real MySQL - 이성욱, 백은빈
+-   Real MySQL - 이성욱, 백은빈
 
 ## 네트워크
 
