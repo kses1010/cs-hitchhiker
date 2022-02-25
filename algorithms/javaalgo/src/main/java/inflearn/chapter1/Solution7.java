@@ -13,6 +13,7 @@ public class Solution7 {
 
     System.out.println(solution(str));
     System.out.println(solution2(str));
+    System.out.println(solution3(str));
   }
 
   private static String solution(String str) {
@@ -38,5 +39,13 @@ public class Solution7 {
       }
     }
     return "YES";
+  }
+
+  private static String solution3(String str) {
+    String tmp = new StringBuilder(str).reverse().toString();
+    if (str.equalsIgnoreCase(tmp)) {
+      return "YES";
+    }
+    return "NO";
   }
 }
