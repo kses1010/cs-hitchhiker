@@ -17,6 +17,19 @@ public class Solution4 {
     for (String s : solution2(strs)) {
       System.out.println(s);
     }
+
+    for (String s : solution1(strs)) {
+      System.out.println(s);
+    }
+  }
+
+  public static List<String> solution1(String[] strs) {
+    List<String> answers = new ArrayList<>();
+    for (String str : strs) {
+      StringBuilder sb = new StringBuilder(str);
+      answers.add(sb.reverse().toString());
+    }
+    return answers;
   }
 
   public static List<String> solution2(String[] str) {
