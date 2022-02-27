@@ -21,7 +21,7 @@ public class Solution9 {
     char[] chars = str.toCharArray();
     for (char c : chars) {
       if (Character.isDigit(c)) {
-        tmp += String.valueOf(c);
+        tmp += c;
       }
     }
     return Integer.parseInt(tmp);
