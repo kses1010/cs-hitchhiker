@@ -13,6 +13,7 @@ public class Solution9 {
     String str = br.readLine();
 
     System.out.println(solution(str));
+    System.out.println(solution2(str));
   }
 
   private static int solution(String str) {
@@ -24,5 +25,16 @@ public class Solution9 {
       }
     }
     return Integer.parseInt(tmp);
+  }
+
+  public static int solution2(String str) {
+    int answer = 0;
+    for (char x : str.toCharArray()) {
+      // 아스키 숫자로 해결하기
+      if (x >= 48 && x <= 57) {
+        answer = answer * 10 + (x - 48);
+      }
+    }
+    return answer;
   }
 }
