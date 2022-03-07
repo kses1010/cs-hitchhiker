@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 // 8. 등수구하기
+//5
+//87 89 92 100 76
 public class Solution8 {
 
   public static void main(String[] args) throws IOException {
