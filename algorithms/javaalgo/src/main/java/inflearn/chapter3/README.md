@@ -3,3 +3,4 @@
 2. 공통원소 구하기(two pointers algorithm)
 3. 최대 매출(sliding window)
 4. 연속 부분수열
+5. 연속된 자연수의 합
