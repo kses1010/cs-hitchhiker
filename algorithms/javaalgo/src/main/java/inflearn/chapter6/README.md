@@ -2,3 +2,4 @@
 1. 선택정렬
 2. 버블정렬
 3. 삽입정렬
+4. Least Recently Used
