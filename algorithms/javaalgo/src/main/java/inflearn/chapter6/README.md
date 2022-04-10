@@ -4,3 +4,4 @@
 3. 삽입정렬
 4. Least Recently Used
 5. 중복 확인
+6. 장난꾸러기
