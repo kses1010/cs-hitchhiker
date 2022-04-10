@@ -3,3 +3,4 @@
 2. 버블정렬
 3. 삽입정렬
 4. Least Recently Used
+5. 중복 확인
