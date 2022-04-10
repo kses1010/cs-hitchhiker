@@ -5,3 +5,4 @@
 4. Least Recently Used
 5. 중복 확인
 6. 장난꾸러기
+7. 좌표 정렬
