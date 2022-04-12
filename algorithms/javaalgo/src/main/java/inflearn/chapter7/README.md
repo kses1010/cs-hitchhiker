@@ -6,3 +6,4 @@
 5. 이진트리순회(DFS: Depth-First Search)
 6. 부분집합 구하기(DFS)
 7. 이진트리 레벨탐색(BFS : Breadth-First Search)
+8. 송아지 찾기 1(BFS : 상태트리검색)
