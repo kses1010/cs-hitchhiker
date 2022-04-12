@@ -1,4 +1,4 @@
-package inflearn.chapter7;
+package inflearn.chapter7.solution9;
 
 class Node {
   int data;
