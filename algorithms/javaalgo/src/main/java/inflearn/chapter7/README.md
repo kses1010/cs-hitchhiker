@@ -4,3 +4,4 @@
 3. 팩토리얼
 4. 피보나치 수열
 5. 이진트리순회(DFS: Depth-First Search)
+6. 부분집합 구하기(DFS)
