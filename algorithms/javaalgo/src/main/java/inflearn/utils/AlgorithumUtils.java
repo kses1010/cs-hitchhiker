@@ -23,7 +23,7 @@ public class AlgorithumUtils {
   // 조합(메모이제이션)
   static int[][] dy = new int[35][35];
 
-  public static void combi() throws IOException {
+  private static void combi() throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String[] splits = br.readLine().split(" ");
     int n = Integer.parseInt(splits[0]);
