@@ -1,4 +1,4 @@
-package baekjoon.silver4;
+package baekjoon.silver.silver4;
 
 import java.util.ArrayList;
 import java.util.List;
