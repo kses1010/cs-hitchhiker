@@ -38,10 +38,10 @@ public class Solution1 {
       players.add(new Player(sc.nextInt(), sc.nextInt()));
     }
 
-    System.out.println(solution(players, n));
+    System.out.println(solution(players));
   }
 
-  private static int solution(List<Player> players, int n) {
+  private static int solution(List<Player> players) {
     int answer = 0;
     Collections.sort(players);
     int max = Integer.MIN_VALUE;
