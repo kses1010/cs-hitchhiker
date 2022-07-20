@@ -35,10 +35,10 @@ public class Solution2 {
       meetings.add(new Meeting(sc.nextInt(), sc.nextInt()));
     }
 
-    System.out.println(solution(meetings, n));
+    System.out.println(solution(meetings));
   }
 
-  private static int solution(List<Meeting> meetings, int n) {
+  private static int solution(List<Meeting> meetings) {
     int count = 0;
     Collections.sort(meetings);
     int endTime = 0;
