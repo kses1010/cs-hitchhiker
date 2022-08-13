@@ -1,4 +1,4 @@
-package leetcode.number4;
+package leetcode.number1to10.number4;
 
 // 또 다른 풀이
 public class Solution {

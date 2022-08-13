@@ -1,4 +1,4 @@
-package leetcode.number15
+package leetcode.number11to20.number15
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
