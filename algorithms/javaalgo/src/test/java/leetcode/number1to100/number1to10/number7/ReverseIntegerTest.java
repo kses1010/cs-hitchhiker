@@ -1,4 +1,4 @@
-package leetcode.number1to10.number7;
+package leetcode.number1to100.number1to10.number7;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
