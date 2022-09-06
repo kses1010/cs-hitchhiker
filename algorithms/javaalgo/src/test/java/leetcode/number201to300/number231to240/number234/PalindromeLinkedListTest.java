@@ -1,4 +1,4 @@
-package leetcode.number231to240.number234;
+package leetcode.number201to300.number231to240.number234;
 
 import java.util.Deque;
 import java.util.LinkedList;
