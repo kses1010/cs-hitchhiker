@@ -25,7 +25,7 @@ class MostCommonWord {
                 wordMap[word] = wordMap.getValue(word) + 1
             }
         }
-        val max: Map.Entry<String, Int> = wordMap.maxBy { it.value }
+        val max: Map.Entry<String, Int> = wordMap.maxByOrNull { it.value }!!
         return max.key
     }
 }
