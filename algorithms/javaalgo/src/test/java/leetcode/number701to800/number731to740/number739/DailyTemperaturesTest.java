@@ -1,4 +1,4 @@
-package leetcode.number731to740.number739;
+package leetcode.number701to800.number731to740.number739;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
