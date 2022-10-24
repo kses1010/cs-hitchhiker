@@ -1,4 +1,4 @@
-package leetcode.number561to570.number561;
+package leetcode.number501to600.number561to570.number561;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
