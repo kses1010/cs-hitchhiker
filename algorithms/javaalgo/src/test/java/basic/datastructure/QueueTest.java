@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 
 import org.junit.jupiter.api.Test;
 
-public class StackQueueTest {
+public class QueueTest {
 
     @Test
     void queueTest() {
