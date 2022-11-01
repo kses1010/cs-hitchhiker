@@ -1,4 +1,4 @@
-package basic.datastructure;
+package basic.datastructure.queue;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;

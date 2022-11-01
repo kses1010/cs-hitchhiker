@@ -1,4 +1,4 @@
-package basic.datastructure;
+package basic.datastructure.queue;
 
 public class CircularQueue {
 
