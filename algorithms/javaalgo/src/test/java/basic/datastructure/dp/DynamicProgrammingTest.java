@@ -12,10 +12,14 @@ public class DynamicProgrammingTest {
         Fibonacci fibonacci = new Fibonacci(10);
         int fiboNumber1 = fibonacci.getFiboNumber(5);
         int fiboNumber2 = fibonacci.getFiboNumber(6);
+        int fiboNumberIter1 = fibonacci.getFiboNumberIter(5);
+        int fiboNumberIter2 = fibonacci.getFiboNumberIter(6);
 
         assertAll(
             () -> assertThat(fiboNumber1).isEqualTo(5),
-            () -> assertThat(fiboNumber2).isEqualTo(8)
+            () -> assertThat(fiboNumber2).isEqualTo(8),
+            () -> assertThat(fiboNumberIter1).isEqualTo(5),
+            () -> assertThat(fiboNumberIter2).isEqualTo(8)
         );
     }
 }
