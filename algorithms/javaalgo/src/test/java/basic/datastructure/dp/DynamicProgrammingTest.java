@@ -12,8 +12,10 @@ public class DynamicProgrammingTest {
         Fibonacci fibonacci = new Fibonacci(10);
         int fiboNumber1 = fibonacci.getFiboNumber(5);
         int fiboNumber2 = fibonacci.getFiboNumber(6);
-        int fiboNumberIter1 = fibonacci.getFiboNumberIter(5);
-        int fiboNumberIter2 = fibonacci.getFiboNumberIter(6);
+
+        Fibonacci fibonacci1 = new Fibonacci(10);
+        int fiboNumberIter1 = fibonacci1.getFiboNumberIter(5);
+        int fiboNumberIter2 = fibonacci1.getFiboNumberIter(6);
 
         assertAll(
             () -> assertThat(fiboNumber1).isEqualTo(5),

@@ -26,6 +26,6 @@ public class Fibonacci {
             fibo[i] = fibo[i - 2] + fibo[i - 1];
         }
 
-        return fibo[n];
+        return fibo[n - 1];
     }
 }
