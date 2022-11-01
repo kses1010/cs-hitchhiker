@@ -55,7 +55,7 @@ public class Solution4 {
     } else if (n == 2) {
       return fibo[n] = 1;
     } else {
-      return fibo[n] = dfs2(n - 2) + dfs2(n - 1);
+      return fibo[n] = dfs3(n - 2) + dfs3(n - 1);
     }
   }
 }
