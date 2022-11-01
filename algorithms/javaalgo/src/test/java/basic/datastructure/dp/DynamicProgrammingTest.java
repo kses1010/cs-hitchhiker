@@ -3,6 +3,7 @@ package basic.datastructure.dp;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
 
+import java.util.List;
 import org.junit.jupiter.api.Test;
 
 public class DynamicProgrammingTest {
@@ -23,5 +24,13 @@ public class DynamicProgrammingTest {
             () -> assertThat(fiboNumberIter1).isEqualTo(5),
             () -> assertThat(fiboNumberIter2).isEqualTo(8)
         );
+    }
+
+    @Test
+    void primeNumberTest() {
+        PrimeNumber primeNumber = new PrimeNumber(100);
+        List<Integer> primeList = primeNumber.getPrimeList(10);
+
+        assertThat(primeList).isEqualTo(List.of(2, 3, 5, 7));
     }
 }
