@@ -18,11 +18,17 @@ public class DynamicProgrammingTest {
         int fiboNumberIter1 = fibonacci1.getFiboNumberIter(5);
         int fiboNumberIter2 = fibonacci1.getFiboNumberIter(6);
 
+        Fibonacci fibonacci2 = new Fibonacci(10);
+        int fibo1 = fibonacci2.getFiboShortMemory(5);
+        int fibo2 = fibonacci2.getFiboShortMemory(6);
+
         assertAll(
             () -> assertThat(fiboNumber1).isEqualTo(5),
             () -> assertThat(fiboNumber2).isEqualTo(8),
             () -> assertThat(fiboNumberIter1).isEqualTo(5),
-            () -> assertThat(fiboNumberIter2).isEqualTo(8)
+            () -> assertThat(fiboNumberIter2).isEqualTo(8),
+            () -> assertThat(fibo1).isEqualTo(5),
+            () -> assertThat(fibo2).isEqualTo(8)
         );
     }
 
