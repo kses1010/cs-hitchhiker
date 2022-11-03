@@ -33,4 +33,34 @@ public class DynamicProgrammingTest {
 
         assertThat(primeList).isEqualTo(List.of(2, 3, 5, 7));
     }
+
+    @Test
+    void stairDyTest() {
+        int firstStep = 1;
+        int secondStep = 2;
+
+        assertAll(
+            () -> assertThat(stairDy(firstStep, secondStep, 1)).isEqualTo(1),
+            () -> assertThat(stairDy(firstStep, secondStep, 2)).isEqualTo(2),
+            () -> assertThat(stairDy(firstStep, secondStep, 3)).isEqualTo(3),
+            () -> assertThat(stairDy(firstStep, secondStep, 7)).isEqualTo(21)
+        );
+    }
+
+    private int stairDy(int firstStep, int secondStep, int n) {
+        int[] dy = new int[n + 1];
+        dy[1] = firstStep;
+        if (n == 1) {
+            return dy[n];
+        }
+        dy[2] = secondStep;
+        if (n == 2) {
+            return dy[n];
+        }
+        for (int i = 3; i <= n; i++) {
+            dy[i] = dy[i - 2] + dy[i - 1];
+        }
+
+        return dy[n];
+    }
 }
