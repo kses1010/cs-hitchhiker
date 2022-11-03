@@ -21,4 +21,18 @@ public class RecursiveTest {
             List.of(3, 2, 1)
         ));
     }
+
+    @Test
+    void combiTest() {
+        Combinations combi = new Combinations(4, 2);
+
+        assertThat(combi.combine()).isEqualTo(List.of(
+            List.of(1, 2),
+            List.of(1, 3),
+            List.of(1, 4),
+            List.of(2, 3),
+            List.of(2, 4),
+            List.of(3, 4)
+        ));
+    }
 }
