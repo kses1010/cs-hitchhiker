@@ -3,8 +3,10 @@ package codility.naver;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 import org.junit.jupiter.api.Test;
 
 public class NaverCodility2021Test {
@@ -50,5 +52,26 @@ public class NaverCodility2021Test {
             }
         }
         return answers;
+    }
+
+    @Test
+    void test2() {
+        int[] A = {2, 3, 1, 4, 2, 2};
+        int R = 3;
+
+        assertThat(maxKindArr(A, R)).isEqualTo(3);
+    }
+
+    // 전체 탐색 - 이걸 요구하는건 아닐듯
+    public int maxKindArr(int[] A, int R) {
+        int count = 0;
+        for (int i = 0; i < A.length - R; i++) {
+            Set<Integer> numSet = new HashSet<>();
+            for (int j = i; j < R; j++) {
+                numSet.add(A[j]);
+            }
+            count = Math.max(count, numSet.size());
+        }
+        return count;
     }
 }
