@@ -1,4 +1,4 @@
-package leetcode.number1to100.number21to30;
+package leetcode.number1to100.number21to30.number21;
 
 import leetcode.util.ListNode;
 
