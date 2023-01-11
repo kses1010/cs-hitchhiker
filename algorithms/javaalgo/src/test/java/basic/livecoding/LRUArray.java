@@ -17,11 +17,10 @@ public class LRUArray {
             if (q.size() == size) {
                 q.pollLast();
             }
-            q.addFirst(data);
         } else {
             q.remove(data);
-            q.addFirst(data);
         }
+        q.addFirst(data);
     }
 
     @Override

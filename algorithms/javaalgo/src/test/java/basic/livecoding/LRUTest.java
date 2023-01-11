@@ -12,18 +12,18 @@ public class LRUTest {
         lru.add(2);
         lru.add(3);
         lru.add(7);
-        System.out.println(lru);
+        System.out.println(lru); // [7, 3, 2, 1]
         System.out.println("================");
 
         lru.add(3);
-        System.out.println(lru);
+        System.out.println(lru); // [3, 7, 2, 1]
         System.out.println("================");
 
         lru.add(8);
-        System.out.println(lru);
+        System.out.println(lru); // [8, 3, 7, 2]
         System.out.println("================");
 
         lru.add(1);
-        System.out.println(lru);
+        System.out.println(lru); // [1, 8, 3, 7]
     }
 }
