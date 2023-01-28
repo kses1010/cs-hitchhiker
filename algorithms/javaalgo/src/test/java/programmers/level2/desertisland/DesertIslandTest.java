@@ -1,4 +1,4 @@
-package programmers.level2;
+package programmers.level2.desertisland;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
