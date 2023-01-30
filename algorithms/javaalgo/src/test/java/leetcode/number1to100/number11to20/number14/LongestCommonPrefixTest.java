@@ -24,11 +24,11 @@ public class LongestCommonPrefixTest {
             return "";
         }
         Arrays.sort(strs);
-        String minStr = strs[0];
-        String maxStr = strs[strs.length - 1];
+        String first = strs[0];
+        String last = strs[strs.length - 1];
         int i = 0;
-        while (i < minStr.length()) {
-            if (minStr.charAt(i) == maxStr.charAt(i)) {
+        while (i < first.length()) {
+            if (first.charAt(i) == last.charAt(i)) {
                 i++;
             } else {
                 break;
@@ -37,6 +37,6 @@ public class LongestCommonPrefixTest {
         if (i == 0) {
             return "";
         }
-        return minStr.substring(0, i);
+        return first.substring(0, i);
     }
 }
