@@ -1,4 +1,4 @@
-package programmers.level3.failurerate;
+package programmers.level1.failurerate;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
