@@ -23,7 +23,7 @@ public class KPrimeNumberTest {
 
     public int solution(int n, int k) {
         int answer = 0;
-        String kNum = convertKNum(n, k);
+        String kNum = Integer.toString(n, k); // K 진수 만드는 함수
         String[] splits = kNum.split("0");
 
         for (String s : splits) {
