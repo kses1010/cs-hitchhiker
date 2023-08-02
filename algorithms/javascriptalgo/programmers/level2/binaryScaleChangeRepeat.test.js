@@ -26,3 +26,14 @@ function solution(s) {
 
     return answer;
 }
+
+function solution2(s) {
+    var answer = [0, 0];
+    while (s.length > 1) {
+        answer[0]++;
+        // /0/g 는 0인 숫자 전부를 의미, [] 0이 하나도 없을 경우 null 방지 대비
+        answer[1] += (s.match(/0/g) || []).length;
+        s = s.replace(/0/g, '').length.toString(2);
+    }
+    return answer;
+}
