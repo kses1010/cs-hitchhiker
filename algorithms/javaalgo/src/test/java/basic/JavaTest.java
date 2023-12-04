@@ -3,18 +3,6 @@ package basic;
 import org.junit.jupiter.api.Test;
 
 public class JavaTest {
-
-  @Test
-  void integerTest() {
-    int a = 1;
-    Integer b = new Integer(1);
-    Integer c = new Integer(1);
-
-    System.out.println(a == b);
-    System.out.println(a == c);
-    System.out.println(b == c);
-  }
-
   @Test
   void integerTest2() {
     int a = 1;
