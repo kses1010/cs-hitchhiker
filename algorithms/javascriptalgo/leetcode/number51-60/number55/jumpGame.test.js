@@ -8,12 +8,12 @@ test("test", () => {
 
 // 최대 점프 길이를 의미함
 function canJump(nums) {
-  let lastJump = 0;
+  let reach = 0;
   for (let i = 0; i < nums.length; i++) {
-    if (lastJump < i) {
+    if (reach < i) {
       return false;
     }
-    lastJump = Math.max(lastJump, i + nums[i]);
+    reach = Math.max(reach, i + nums[i]);
   }
   return true;
 }
