@@ -35,8 +35,8 @@ test("test", () => {
     [".", ".", "4", ".", ".", ".", ".", ".", "."]
   ];
 
-  // expect(isValidSudoku(board1)).toBeTruthy();
-  // expect(isValidSudoku(board2)).toBeFalsy();
+  expect(isValidSudoku(board1)).toBeTruthy();
+  expect(isValidSudoku(board2)).toBeFalsy();
   expect(isValidSudoku(board3)).toBeFalsy();
 });
 
