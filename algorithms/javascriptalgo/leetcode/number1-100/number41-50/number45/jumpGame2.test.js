@@ -8,20 +8,20 @@ test("test", () => {
 
 function jump(nums) {
   const end = nums.length - 1;
-  let answer = 0;
+  let count = 0;
   let lastJump = 0;
-  let curJump = 0;
+  let curAt = 0;
 
   for (let i = 0; i < nums.length - 1; i++) {
-    curJump = Math.max(curJump, i + nums[i]);
+    curAt = Math.max(curAt, i + nums[i]);
     if (i === lastJump) {
-      answer++
-      lastJump = curJump;
+      count++
+      lastJump = curAt;
 
-      if (curJump >= end) {
-        return answer;
+      if (curAt >= end) {
+        return count;
       }
     }
   }
-  return answer;
+  return count;
 }
