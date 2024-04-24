@@ -19,13 +19,13 @@ function canCompleteCircuit(gas, cost) {
   }
 
   let start = 0;
-  let fuel = 0;
+  let curFuel = 0;
   for (let i = 0; i < gas.length; i++) {
-    if (gas[i] + fuel < cost[i]) {
+    if (gas[i] + curFuel < cost[i]) {
       start = i + 1;
-      fuel = 0;
+      curFuel = 0;
     } else {
-      fuel += gas[i] - cost[i];
+      curFuel += gas[i] - cost[i];
     }
   }
   return start;
