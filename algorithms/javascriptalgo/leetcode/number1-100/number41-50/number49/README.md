@@ -15,8 +15,11 @@
 - 코딩 실행
 
 ### 6. 회고
+- Java 에서의 charArray()를 자바스크립트에서는 다음처럼 표현한다.
+```javascript
+const strArr = s.split('').join(''); // Java에서는 s.charArray();
+```
 - 시간복잡도 / 공간복잡도를 좀 더 압축시키는 방법으로 brute force 방법이 있다.
-
 ```javascript
 /**
  * @param {string} s
