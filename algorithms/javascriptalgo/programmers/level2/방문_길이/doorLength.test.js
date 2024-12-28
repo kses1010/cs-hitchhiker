@@ -17,8 +17,8 @@ function solution(dirs) {
 
     if (nx > 5 || nx < -5 || ny > 5 || ny < -5) continue;
 
-    visited.add("" + now[0] + now[1] + nx + ny);
-    visited.add("" + nx + ny + now[0] + now[1]);
+    visited.add(`${now[0]}, ${now[1]} -> ${nx}, ${ny}`);
+    visited.add(`${nx}, ${ny} -> ${now[0]}, ${now[1]}`);
 
     now = [nx, ny];
   }
