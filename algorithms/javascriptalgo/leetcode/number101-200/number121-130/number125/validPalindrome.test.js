@@ -13,7 +13,7 @@ function isPalindrome(s) {
   let lt = 0;
   let rt = lowerS.length - 1;
   while (lt < rt) {
-    if (lowerS.charAt(lt) !== lowerS.charAt(rt)) return false;
+    if (lowerS[lt] !== lowerS[rt]) return false;
     lt++;
     rt--;
   }
