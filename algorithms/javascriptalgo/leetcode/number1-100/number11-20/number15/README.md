@@ -1,4 +1,4 @@
-## 42. Trapping Rain Water
+## 15. Three Sum
 #### 1. 문제 파악
 - 정수 배열 `nums`가 주어지면, `nums[i] + nums[j] + nums[k] == 0.` 이 되는 배열 만들기
 - 배열은 다음과 같다. `[nums[i], nums[j], nums[k]]`
