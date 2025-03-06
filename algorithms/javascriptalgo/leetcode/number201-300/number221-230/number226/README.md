@@ -13,3 +13,16 @@
 - 코딩 실행
 
 ### 6. 회고
+- 좀 더 명확하게 푸는 방법이 있다.
+```javascript
+const invertTree = (root) => {
+  if (!root) return null;
+  
+  const node = new TreeNode(root.val);
+  
+  node.right = invertTree(root.left);
+  node.left = invertTree(root.right);
+  
+  return node;
+}
+```
